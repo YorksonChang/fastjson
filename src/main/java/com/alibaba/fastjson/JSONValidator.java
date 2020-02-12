@@ -156,14 +156,10 @@ public abstract class JSONValidator implements Cloneable {
 
                 if (ch == '.') {
                     next();
-                    // bug fix: 0.e7 should not pass the test
-                    if (ch < '0' || ch > '9') {
-                        error();
-                    }
+
                     while (ch >= '0' && ch <= '9') {
                         next();
                     }
-                    
                 }
 
                 if (ch == 'e' || ch == 'E') {
