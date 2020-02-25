@@ -1,13 +1,10 @@
-package com.wheelchair.parser;
+package com.skateboard2wheelchair.parser;
 
 import com.diffblue.deeptestutils.Reflector;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.lang.reflect.Method;
-
-import static org.junit.Assert.*;
-import com.diffblue.deeptestutils.Reflector;
 
 
 public class JSONScannerTest {
