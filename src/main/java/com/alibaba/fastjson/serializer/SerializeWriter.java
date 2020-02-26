@@ -33,7 +33,7 @@ import static com.alibaba.fastjson.util.IOUtils.replaceChars;
 /**
  * @author wenshao[szujobs@hotmail.com]
  */
-public final class SerializeWriter extends Writer {
+public class SerializeWriter extends Writer {
     private final static ThreadLocal<char[]> bufLocal         = new ThreadLocal<char[]>();
     private final static ThreadLocal<byte[]> bytesBufLocal    = new ThreadLocal<byte[]>();
     private static       int                 BUFFER_THRESHOLD = 1024 * 128;
